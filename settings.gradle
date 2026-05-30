@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'template'
+rootProject.name = 'headapi'
 
 include 'common'
 include 'fabric'

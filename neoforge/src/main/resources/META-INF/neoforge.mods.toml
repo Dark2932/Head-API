@@ -1,33 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mods]]
-modId = "template"
+modId = "headapi"
 version = "${version}"
-displayName = "Template"
-authors = "Me!"
+displayName = "Head API"
+authors = "Dark2932"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+An API mod about players' heads.
 '''
 #logoFile = ""
 
-[[dependencies.template]]
+[[dependencies.headapi]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.template]]
+[[dependencies.headapi]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.template]]
+[[dependencies.headapi]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.8,)"
@@ -35,4 +35,4 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
-config = "template.mixins.json"
+config = "headapi.mixins.json"
