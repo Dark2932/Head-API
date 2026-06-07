@@ -1,6 +1,6 @@
 package com.dark2932.headapi.mixin;
 
-import com.dark2932.headapi.head.HeadTextureManager;
+import com.dark2932.headapi.ChatHeads;
 import com.dark2932.headapi.mixininterface.TextureLocationSettable;
 import com.mojang.blaze3d.platform.NativeImage;
 import net.minecraft.client.renderer.texture.HttpTexture;
@@ -29,7 +29,7 @@ public class HttpTextureMixin implements TextureLocationSettable {
     @Inject(method = "loadCallback", at = @At("HEAD"))
     private void headapi$extractHead(NativeImage image, CallbackInfo ci) {
         if (this.headapi$skinLocation != null && image != null) {
-            HeadTextureManager.onSkinLoaded(this.headapi$skinLocation, image);
+            ChatHeads.onSkinLoaded(this.headapi$skinLocation, image);
         }
     }
 }
