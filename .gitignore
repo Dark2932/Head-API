@@ -10,6 +10,9 @@
 !*gradle*
 .gradle/
 
+# doc
+!doc/
+
 # files
 !.gitignore
 !LICENSE
