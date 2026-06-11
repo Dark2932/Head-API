@@ -15,6 +15,7 @@
 
 # files
 !.gitignore
+!AGENTS.md
 !LICENSE
 !README.md
 
